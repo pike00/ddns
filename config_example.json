@@ -1,0 +1,12 @@
+{
+  "pushover": {
+    "key_user": "<Pushover User Key>",
+    "key_app": "<Pushover App Key>"
+  },
+  "cloudflare": {
+    "url": "https://api.cloudflare.com/client/v4/",
+    "api_token": "<Cloudflare API Token>",
+    "id_zone": "<Cloudflare ID Zone>",
+    "domain": "<Domain>"
+  }
+}

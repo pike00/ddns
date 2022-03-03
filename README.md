@@ -1,7 +1,7 @@
 # Dynamic DNS for Cloudflare
 
-Used to updated DNS records for Cloudflare. 
+Used to updated DNS records for Cloudflare. Based on the project [godns](https://github.com/TimothyYe/godns) 
 
-1. Rename `config_example.json` to `config.json`
-2. Add relevant values.
-3. Add to crontab as appropriate. 
+1. `cp config_example.json config.json`
+2. Fill out api variables in `config.json`
+3. Run `docker-compose up -d`

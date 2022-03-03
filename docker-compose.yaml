@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  godns:
+      image: 'timothyye/godns:latest'
+      container_name: ddns
+      restart: always
+      volumes:
+          - '/root/ddns/config.json:/config.json'
+      network_mode: "host"

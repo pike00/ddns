@@ -1,12 +1,25 @@
 {
-  "pushover": {
-    "key_user": "<Pushover User Key>",
-    "key_app": "<Pushover App Key>"
-  },
-  "cloudflare": {
-    "url": "https://api.cloudflare.com/client/v4/",
-    "api_token": "<Cloudflare API Token>",
-    "id_zone": "<Cloudflare ID Zone>",
-    "domain": "<Domain>"
+  "provider": "Cloudflare",
+  "login_token": "<Cloudflare Token>",
+  "domains": [{
+      "domain_name": "<domain>",
+      "sub_domains": ["<subdomain>"]
+    }],
+  "resolver": "1.1.1.1",
+  "ip_url": "https://api.ipify.org",
+  "ip_type": "IPv4",
+  "interval": 300,
+  "socks5_proxy": "",
+  "notify": {
+    "pushover": {
+      "enabled": true,
+      "token": "<token url>",
+      "user": "<user>",
+      "message_template": "Domain <b>{{ .Domain }}</b> is updated to {{ .CurrentIP }}",
+      "device": "",
+      "title": "<domain> IP Changed",
+      "priority": 0,
+      "html": 1
+    }
   }
 }
